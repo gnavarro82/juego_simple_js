@@ -1,0 +1,47 @@
+<canvas id="lienzo" width="500" height="500" style="border: 1px solid black">
+<script >
+	
+	//alert("Inicia el Juego");
+	//acceder al elemento linezo
+	var lienzo = document.getElementById("lienzo");
+	var ctx = lienzo.getContext('2d');
+
+	//MANIPULAR EL LIENZO
+	ctx.font ="30px Arial";
+	ctx.fillText("Mi primer juego", 10,30);
+
+	//dibujar un cuadrado
+	ctx.fillRect(10,40,50,50);
+
+	//MOVER X
+	var x = 50;
+	var spdx = 20;
+	
+	var y = 120
+	var spdy = 20;
+	
+	
+	function Update(){
+		x = x+spdx;
+		y= y+spdy;
+		//las J se mueven en diagonal
+		ctx.fillText("J", x, y);
+	}
+
+
+	//el codigo que se reperira cada segundo 1000
+	//setInterval(function(){
+	//	alert("Hola")	
+	//	}, 1000);
+	setInterval(Update, 100);
+
+	
+
+
+
+
+
+
+
+</script>
+</canvas>

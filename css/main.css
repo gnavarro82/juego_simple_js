@@ -1,0 +1,17 @@
+
+body{
+	background: #34495e;
+	color: #fff;
+	/*alineado al centro*/
+	height: 100vh;
+	/*como queda un espaciado se quita el pading y margin*/
+	padding: 0;
+	margin:0; 
+
+	/*centrando el contenido*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*colocara la imagen arriba y abajo*/
+	flex-direction: column;
+}
